@@ -42,10 +42,6 @@ h1, h2, h3, h4, h5, h6 {
     font-family: var(--section-callout-font) !important;
     padding: 0 var(--space-x6) !important;
   }
-  #oEtbxq {
-    display: none !important; 
-  }
-  
   /* Navigation & Header */
   
   .transparent-header .header[data-v-31605ed0] {
