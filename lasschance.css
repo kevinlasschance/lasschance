@@ -1,7 +1,9 @@
-
 h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
-  }
+    overflow-wrap: normal;
+    word-break: normal !important;
+    --mobile-base-font-size: 12;
+}
   
   #jFPvhs .feature-card .w-wrapper > .text-component p,
   #OcwrGQ .feature-card .w-wrapper > .text-component p,
@@ -33,6 +35,9 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.4;
     letter-spacing: 0;;
   }
+  .text-component {
+    --mobile-font-size-scale: 1.4 !important;
+  }
   .text-component ul,
   .text-component ol {
     padding: 0.5em 0 0 0 !important;
@@ -42,6 +47,7 @@ h1, h2, h3, h4, h5, h6 {
     font-family: var(--section-callout-font) !important;
     padding: 0 var(--space-x6) !important;
   }
+  
   /* Navigation & Header */
   
   .transparent-header .header[data-v-31605ed0] {
@@ -126,12 +132,12 @@ h1, h2, h3, h4, h5, h6 {
   
   
   #EUlnPC h1 {
-    font-size: calc(47px + (70 - 47) * (100vw - 400px) / (1440 - 400)) !important; 
+    font-size: calc(40px + (70 - 40) * (100vw - 400px) / (1440 - 400)) !important; 
     line-height: .9;
     margin-bottom: var(--space-x2);
   }
   .product__title h1 {
-    font-size: calc(32px + (60 - 42) * (100vw - 400px) / (1440 - 400)) !important; 
+    font-size: calc(30px + (60 - 30) * (100vw - 400px) / (1440 - 400)) !important; 
     line-height: .9 impot !important;
     margin-bottom: var(--space-x2);
   }
@@ -544,7 +550,7 @@ h1, h2, h3, h4, h5, h6 {
   #EMrySs .text-component h3,
   #DJHjMo .text-component h3
    {
-    font-size: calc(47px + (65 - 47) * (100vw - 400px) / (1440 - 400)) !important;
+    font-size: calc(30px + (65 - 30) * (100vw - 400px) / (1440 - 400)) !important;
     line-height: .9;
    
   }
@@ -1115,3 +1121,12 @@ h1, h2, h3, h4, h5, h6 {
     height: 80vh !important;
   }
 }
+
+@media(max-width: 767px) {
+  .banner-block-wrapper:after {
+      bottom: 5px;
+      right: 5px;
+      width: 105px;
+      height: 45px;
+  }
+  }
